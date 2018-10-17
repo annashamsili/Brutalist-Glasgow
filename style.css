@@ -1,0 +1,17 @@
+/*links*/
+/*love the idea of a moving squiggly underline when hovering over link*/
+a {
+  text-decoration:none;
+}
+
+.info a:hover {
+  text-decoration:line-through;
+}
+
+#title {
+
+}
+
+#title2 {
+  /*needs to be 90 degree angle*/
+}
