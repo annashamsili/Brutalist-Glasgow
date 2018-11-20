@@ -1,5 +1,4 @@
 /*links*/
-/*love the idea of a moving squiggly underline when hovering over link*/
 a {
   text-decoration:none;
 }
@@ -8,10 +7,16 @@ a {
   text-decoration:line-through;
 }
 
-#title {
-
+ul.nav.nav-pills {
+    text-align: right;
+    float:right;
 }
 
-#title2 {
-  /*needs to be 90 degree angle*/
+#nav-button {
+  float:right;
+  padding-right: 2%;
 }
+
+/*.building {
+  padding:2em;
+}*/

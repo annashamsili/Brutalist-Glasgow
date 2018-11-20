@@ -4,11 +4,26 @@
     <!--metadata goes here-->
     <title>Glasgow Brutalist Architecture</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="functions.js"></script>
+
+
+    <!--add bootstrap-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
   </head>
+
   <body>
     <!--navigation should go here. idea: stack all links in a corner, and on hover they 'unroll' and become readable-->
-    <h2 class=bigtext id=nav.about><a href="about">About</a></h2>
-    <h2 class=bigtext id=nav.contact><a href="Contact">Contact</a></h2>
+    <button type="button" class="btn btn-lg" id="nav-button" onclick="toggleNavbar()"><span class="glyphicon glyphicon-align-justify" aria-hidden:"true"></span></button>
+    <div id="navbar">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="">home</a></li>
+        <li role="presentation"><a href="about.html">about</a></li>
+        <li role="presentation"><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
     <!--cool title bro-->
     <div id=title>
     <a href="">
@@ -17,48 +32,56 @@
     </a>
     </div>
     <!--Content/buildings-->
+    <div id="buildings" class="container-fluid">
     <!--Boyd Orr-->
-    <div class=buildings id=boydorr>
-      <img src=boydorr.jpg>
-      <div class=info id=boydorrinfo>
+    <div class="row">
+    <div id="boydorr" class="building col-md-4">
+      <img src=images/boydorr.png>
+       <div class=info id=boydorrinfo>
         <p>1964<br>JL Gleave & Partners<br><a href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">More info</a></p>
       </div>
     </div>
     <!--Dundasvale Court-->
-    <div class=buildings id=dundasvale>
-      <img src=dundasvale.jpg>
-      <div class=info id=dundasvaleinfo>
-        <p>1968 and 1978<br>Unknown<br><a href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">More info</a></p>
+    <div  id="dundasvale" class="building col-md-4">
+      <img src=images/dundasvale.png>
+      <div class="info" id="dundasvaleinfo">
+        <p>1968 and 1978<br>Unknown<br><a href="https://www.mcleanarchitects.co.uk/dundasvale-court/lohdcaw476jv02btzpuo0oq2u04h8p">More info</a></p>
       </div>
     </div>
+  </div>
     <!--Anderston Centre-->
-    <div class=buildings id=anderston>
-      <img src=anderston.jpg>
-      <div class=info id=anderstoninfo>
-        <p>1972<br>Richard Seifert<br><a href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">More info</a></p>
+    <div class=row>
+    <div id="anderston" class="building col-md-4">
+      <img src=images/anderston.png>
+      <div class="info" id="anderstoninfo">
+        <p>1972<br>Richard Seifert and Partners<br><a href="https://en.wikipedia.org/wiki/Anderston_Centre">More info</a></p>
       </div>
     </div>
     <!--Argyle Building-->
-    <div class=buildings id=argyle>
-      <img src=argyle.jpg>
-      <div class=info id=argyleinfo>
-        <p>2008<br>Aedas Architects<br><a href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">More info</a></p>
+    <div id="argyle" class="building col-md-4">
+      <img src=images/argyle.png>
+      <div class="info" id="argyleinfo">
+        <p>2008<br>Aedas Architects<br><a href="https://en.wikipedia.org/wiki/Argyle_Building,_Glasgow">More info</a></p>
       </div>
     </div>
+  </div>
     <!--Adam Smith Building-->
-    <div class=buildings id=adamsmith>
-      <img src=adamsmith.jpg>
-      <div class=info id=adamsmithinfo>
-        <p>1967<br>David Harvey, Alex Scott & Associates<br><a href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">More info</a></p>
+    <div class=row>
+    <div id="adamsmith" class="building col-md-4">
+      <img src=images/adamsmith.png>
+      <div class="info" id="adamsmithinfo">
+        <p>1967<br>David Harvey, Alex Scott & Associates<br><a href="https://www.universitystory.gla.ac.uk/building/?id=70">More info</a></p>
       </div>
     </div>
     <!--Savoy Market-->
-    <div class=buildings id=savoy>
-      <img src=savoymarket.jpg>
-      <div class=info id=savoyinfo>
-        <p>1967<br>David Harvey, Alex Scott & Associates<br><a href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">More info</a></p>
+    <div id="savoy" class="building col-md-4">
+      <img src=images/savoy.png>
+      <div class="info" id="savoyinfo">
+        <p>1967<br>David Harvey, Alex Scott & Associates<br><a href="https://www.eveningtimes.co.uk/news/16688857.sauchiehall-street-savoy-centre-to-undergo-major-refurbishment/">More info</a></p>
       </div>
     </div>
+  </div>
+</div>
     <!--Here comes the footer with info!-->
     <footer>
     <div id=copyright>
