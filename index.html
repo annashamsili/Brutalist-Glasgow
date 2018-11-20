@@ -5,15 +5,27 @@
     <title>Glasgow Brutalist Architecture</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
+
     <!--add bootstrap-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
   </head>
 
   <body>
     <!--navigation should go here. idea: stack all links in a corner, and on hover they 'unroll' and become readable-->
-    <h2 class=bigtext id=nav.about><a href="about.html">About</a></h2>
-    <h2 class=bigtext id=nav.contact><a href="Contact.html">Contact</a></h2>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <ol display=inline>
+      <class=bigtext class=navbar-brand id=nav.about><a href="about.html">About</a></p>
+      <class=bigtext class=navbar-brand id=nav.contact><a href="Contact.html">Contact</a></p>
+      <ol>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
     <!--cool title bro-->
     <div id=title>
     <a href="">
@@ -26,7 +38,7 @@
 
     <!--Boyd Orr-->
     <div class=row>
-    <div id=boydorr>
+    <div id=boydorr class="col-md-4">
       <img src=images/boydorr1.jpg>
       <img src=images/boydorr2.jpg>
       <div class=info id=boydorrinfo>
@@ -34,7 +46,7 @@
       </div>
     </div>
     <!--Dundasvale Court-->
-    <div id=dundasvale>
+    <div id=dundasvale class="col-md-4">
       <img src=images/dundasvale1.jpg>
       <img src=images/dundasvale2.jpg>
       <div class=info id=dundasvaleinfo>
@@ -44,7 +56,7 @@
   </div>
     <!--Anderston Centre-->
     <div class=row>
-    <div id=anderston>
+    <div id=anderston class="col-md-4">
       <img src=images/anderston1.jpg>
       <img src=images/anderston2.jpg>
       <div class=info id=anderstoninfo>
@@ -52,7 +64,7 @@
       </div>
     </div>
     <!--Argyle Building-->
-    <div id=argyle>
+    <div id=argyle class="col-md-4">
       <img src=images/argyle1.jpg>
       <img src=images/argyle2.jpg>
       <div class=info id=argyleinfo>
@@ -62,7 +74,7 @@
   </div>
     <!--Adam Smith Building-->
     <div class=row>
-    <div id=adamsmith>
+    <div id=adamsmith class="col-md-4">
       <img src=images/adamsmith1.jpg>
       <img src=images/adamsmith2.jpg>
       <div class=info id=adamsmithinfo>
@@ -70,7 +82,7 @@
       </div>
     </div>
     <!--Savoy Market-->
-    <div id=savoy>
+    <div id=savoy class="col-md-4">
       <img src=images/savoy1.jpg>
       <img src=images/savoy2.jpg>
       <div class=info id=savoyinfo>
