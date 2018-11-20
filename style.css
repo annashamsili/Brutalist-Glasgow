@@ -1,4 +1,8 @@
-/*links*/
+@font-face {
+  font-family: Codec;
+  src: url('Codec-Warm-Bold-trial.ttf');
+}
+
 a {
   text-decoration:none;
 }
@@ -13,10 +17,62 @@ ul.nav.nav-pills {
 }
 
 #nav-button {
-  float:right;
-  padding-right: 2%;
+  padding-top: 10px !important;
 }
 
-/*.building {
-  padding:2em;
-}*/
+.navbar {
+  top: -5em;
+}
+
+.page-header {
+  border-bottom:0px !important;
+}
+ #title1 {
+  font-family: "Codec", serif;
+  color: #000;
+  font-size: 50px;
+  float:left;
+  margin:0;
+  padding:1em;
+  top:1.5em;
+  left:-3em;
+  width:auto;
+  position:absolute;
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#title2 {
+  font-family: "Codec", serif;
+  color: #000;
+  font-size: 50px;
+  margin:0;
+  width:auto;
+  left:1em;
+  top:20px;
+  position:absolute;
+}
+
+#nav-button {
+  float:right;
+  padding-right: 2%;
+  padding-top: 0;
+}
+
+.building {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
