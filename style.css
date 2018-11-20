@@ -1,19 +1,10 @@
 /*links*/
-/*love the idea of a moving squiggly underline when hovering over link*/
 a {
   text-decoration:none;
 }
 
 .info a:hover {
   text-decoration:line-through;
-}
-
-#title {
-
-}
-
-#title2 {
-  /*needs to be 90 degree angle*/
 }
 
 ul.nav.nav-pills {
@@ -26,20 +17,6 @@ ul.nav.nav-pills {
   padding-right: 2%;
 }
 
-#dundasvale img {
-  width:30%;
-}
-
-#boydorr img {
-  width:max-content;
-}
-
-#boydorr {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.building {
-  padding:3em;
-}
+/*.building {
+  padding:2em;
+}*/
