@@ -31,17 +31,15 @@ ul.nav.nav-pills {
 }
 
 #boydorr img {
-  width:30%;
+  width:max-content;
+}
+
+#boydorr {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .building {
   padding:3em;
-}
-
-#boydorr {
-  width:50%;
-}
-
-#dundasvale {
-  width:50%;
 }
