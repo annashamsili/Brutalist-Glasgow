@@ -1,0 +1,234 @@
+/* Things not working:
+- links reacting/not reacting??
+- movement of text over images (perhaps just disable?)
+- start by not displaying the navbar
+*/
+
+@font-face {
+  font-family: Codec;
+  src: url('fonts/Codec-Warm-Bold-trial.ttf');
+}
+
+@font-face {
+  font-family: CamingoCode;
+  src: url('fonts/CamingoCode-Regular.ttf');
+}
+
+body {
+  background-color: #F7F7F7 !important;
+}
+
+a {
+  color: #000 !important;
+}
+
+#up {
+  position: fixed;
+  left:94.5%;
+  top:93%
+}
+
+p {
+  font-family: "CamingoCode", Courier New, Arial, non-serif;
+  font-size: 13px;
+}
+
+a:hover {
+  text-decoration: line-through !important;
+  text-decoration-color: #c60000 !important;
+}
+
+
+ul.nav-pills {
+    text-align: right;
+    float:right;
+    background-color:transparent;
+    font-family: "CamingoCode", Courier New, Arial, non-serif;
+}
+
+.nav a:hover {
+  background-color:transparent !important;
+}
+
+#nav-button {
+  padding-top: 10px !important;
+  background-color: transparent !important;
+}
+
+.page-header {
+  border-bottom:0px !important;
+  margin-top:20px !important;
+}
+ #title1 {
+  font-family: "Codec", sans-serif;
+  color: #000;
+  font-size: 50px;
+  float:left;
+  margin:0;
+  padding:1em;
+  top:1.5em;
+  left:-3em;
+  width:auto;
+  position:fixed;
+  z-index: 200;
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#title2 {
+  font-family: "Codec", Lucida Console, Lucida, sans-serif;
+  color: #000;
+  font-size: 50px;
+  margin:0;
+  width:auto;
+  left:1em;
+  top:20px;
+  position:fixed;
+  z-index: 200;
+}
+
+#nav-button {
+  float:right;
+  padding-right: 3%;
+  padding-top: 0;
+}
+
+.glyphicon.glyphicon-align-justify {
+  font-size:21px;
+}
+
+.building {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 0px;
+  position:relative;
+}
+
+#buildings {
+  /*position:static;*/
+}
+
+#boydtitle{
+  z-index:0;
+}
+
+.container {
+  padding-left:50px !important;
+  padding-right:50px !important;
+  padding-bottom: 50px !important;
+}
+
+#boydorr {
+  padding-left:50px;
+  padding-top:20px;
+  position:relative;
+}
+
+#boydorrinfo {
+  text-align: left;
+  line-height: 1em;
+  position:absolute;
+  top: 3em;
+}
+
+#infobox {
+  top: 37em;
+  left:3.5em;
+  right: 0;
+  position:absolute;
+  float:left;
+  padding:0;
+  text-align: left;
+}
+
+#boydtitle {
+  top: 42em;
+}
+
+#dundasvale {
+  padding-top:5px;
+}
+
+.building-title {
+  font-family: "Codec", Lucida Console, Lucida, sans-serif;
+  font-size:4vw;
+  color: #212121;
+  line-height: 1em;
+  z-index:-500;
+}
+
+#info {
+  top: 6.3em;
+  left:0;
+  right: 0;
+  position:absolute;
+}
+
+#anderstoninfo {
+  text-align: right;
+}
+
+#argyleinfo {
+  top: -4.5em;
+  position: absolute;
+  left:3.5em;
+}
+
+#adamsmithinfo {
+  left:27.2em;
+  top:26.5em;
+  bottom:0;
+  position:absolute;
+  text-align:left;
+}
+
+#savoytitle {
+  position: absolute;
+  left:0;
+  bottom:0;
+  right: 1.5em;
+  top: -1em;
+  text-align:right;
+}
+
+#savoyinfo {
+  position: absolute;
+  left: 16.5em;
+  right: 0;
+  top: 19em;
+  text-align:left;
+}
+
+footer {
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+footer a {
+  color: #c60000 !important;
+}
+
+footer a:hover {
+  color: #000 !important;
+}
+
+#up {
+  z-index: 500 !important;
+}
+
+#navbar {
+  display: none;
+}

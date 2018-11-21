@@ -1,94 +1,119 @@
 <!DOCTYPE html>
 <html lang="eng">
-  <head>
+  <head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon"
+      type="image/png"
+      href="images/favicon.png">
     <!--metadata goes here-->
     <title>Glasgow Brutalist Architecture</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="functions.js"></script>
 
-
-    <!--add bootstrap-->
+    <!--add bootstrap and jQuery-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
   </head>
 
   <body>
+  <div id="top"></div>
+    <header class="page-header">
     <!--navigation should go here. idea: stack all links in a corner, and on hover they 'unroll' and become readable-->
-    <button type="button" class="btn btn-lg" id="nav-button" onclick="toggleNavbar()"><span class="glyphicon glyphicon-align-justify" aria-hidden:"true"></span></button>
+      <button type="button" class="btn btn-lg" id="nav-button" onclick="toggleNavbar()"><i class="fas fa-bars fa-lg"></i></button>
     <div id="navbar">
       <ul class="nav nav-pills">
-        <li role="presentation"><a href="">home</a></li>
+        <li role="presentation"><a href="index.html">home</a></li>
         <li role="presentation"><a href="about.html">about</a></li>
         <li role="presentation"><a href="contact.html">contact</a></li>
+
       </ul>
     </div>
     <!--cool title bro-->
-    <div id=title>
-    <a href="">
-      <h1 class=bigtext id=title1>Brutalist</h1>
-      <h1 class=bigtext id=title2>Glasgow</h1>
-    </a>
+    <div id="buildings">
+    <a href=""><h1 id="title1">BRUTALIST</h1></a>
+    <a href=""><h1 id="title2">GLASGOW</h1></a>
     </div>
+  </header>
+  <div id="up">
+  <a href="#top"><i class="far fa-arrow-alt-circle-up fa-3x"></i></a>
+</div>
+
     <!--Content/buildings-->
-    <div id="buildings" class="container-fluid">
+    <div class="container-fluid">
+
+
+
     <!--Boyd Orr-->
     <div class="row">
-    <div id="boydorr" class="building col-md-4">
-      <img src=images/boydorr.png>
-       <div class=info id=boydorrinfo>
-        <p>1964<br>JL Gleave & Partners<br><a href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">More info</a></p>
+    <div id="boydorr" class="col-md-6 container">
+      <img class="building" src=images/boydorr.png>
+      <div id="infobox">
+        <p id=boydorrinfo>1964<br>JL Gleave & Partners</p>
+        <a class="building-title" id="boydtitle" href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">BoydOrr</a>
       </div>
+
+
+
     </div>
     <!--Dundasvale Court-->
-    <div  id="dundasvale" class="building col-md-4">
-      <img src=images/dundasvale.png>
-      <div class="info" id="dundasvaleinfo">
-        <p>1968 and 1978<br>Unknown<br><a href="https://www.mcleanarchitects.co.uk/dundasvale-court/lohdcaw476jv02btzpuo0oq2u04h8p">More info</a></p>
+    <!-- -->
+    <div id="dundasvale" class="col-md-6  container">
+      <img class="building" src=images/dundasvale.png>
+      <div class="info">
+        <a class="building-title" href="https://www.mcleanarchitects.co.uk/dundasvale-court/lohdcaw476jv02btzpuo0oq2u04h8p">Dundasvale Court</a><br>
+        <p id="dundasvaleinfo">1968 and 1978<br>Architect unknown<br></p>
       </div>
     </div>
-  </div>
+    <div class="clearfix"></div>
     <!--Anderston Centre-->
-    <div class=row>
-    <div id="anderston" class="building col-md-4">
-      <img src=images/anderston.png>
+    <div id="anderston" class="col-md-6  container">
+      <p>1972<br>Richard Seifert and Partners<br></p>
+      <img class="building" src=images/anderston.png>
       <div class="info" id="anderstoninfo">
-        <p>1972<br>Richard Seifert and Partners<br><a href="https://en.wikipedia.org/wiki/Anderston_Centre">More info</a></p>
+        <a class="building-title" href="https://en.wikipedia.org/wiki/Anderston_Centre">Anderston Centre</a>
       </div>
     </div>
     <!--Argyle Building-->
-    <div id="argyle" class="building col-md-4">
-      <img src=images/argyle.png>
+    <div id="argyle" class="col-md-6   container">
+      <img class="building" src=images/argyle.png>
       <div class="info" id="argyleinfo">
-        <p>2008<br>Aedas Architects<br><a href="https://en.wikipedia.org/wiki/Argyle_Building,_Glasgow">More info</a></p>
+        <a class="building-title" id="argyle-title" href="https://en.wikipedia.org/wiki/Argyle_Building,_Glasgow">Argyle Building</a>
+        <p>2008<br>Aedas Architects</p>
       </div>
     </div>
-  </div>
+    <div class="clearfix"></div>
     <!--Adam Smith Building-->
-    <div class=row>
-    <div id="adamsmith" class="building col-md-4">
-      <img src=images/adamsmith.png>
-      <div class="info" id="adamsmithinfo">
-        <p>1967<br>David Harvey, Alex Scott & Associates<br><a href="https://www.universitystory.gla.ac.uk/building/?id=70">More info</a></p>
+    <div id="adamsmith" class="col-md-6  container">
+      <img class="building" src=images/adamsmith.png>
+      <div class="info">
+        <p id="adamsmithinfo">1967<br>David Harvey, Alex Scott & Associates<br></p>
+        <a class="building-title" href="https://www.universitystory.gla.ac.uk/building/?id=70">Adam Smith Building</a>
       </div>
     </div>
     <!--Savoy Market-->
-    <div id="savoy" class="building col-md-4">
-      <img src=images/savoy.png>
-      <div class="info" id="savoyinfo">
-        <p>1967<br>David Harvey, Alex Scott & Associates<br><a href="https://www.eveningtimes.co.uk/news/16688857.sauchiehall-street-savoy-centre-to-undergo-major-refurbishment/">More info</a></p>
+    <div id="savoy" class="col-md-6  container">
+      <img class="building" src=images/savoy.png>
+      <div class="info">
+        <p id="savoyinfo">1970s<br>Gavin Paterson & Sons<br></p>
+        <a class="building-title" id="savoytitle" href="http://www.architectureglasgow.co.uk/midcity.savoycentre.html">Savoy Centre</a>
       </div>
     </div>
   </div>
 </div>
     <!--Here comes the footer with info!-->
     <footer>
+    <br>
     <div id=copyright>
-      <p>Anna Shams Ili © 2018<br><a href="/contact">Contact</a> | <a href=codefirstgirls.org.uk>Code First Girls</a></p>
+      <p>Anna Shams Ili © 2018<br><a href="contact.html">Contact</a> | <a href=codefirstgirls.org.uk>Code First Girls</a></p>
     </div>
     <div id=social>
       <!--Add social media links and cute buttons-->
+    <a href="https://instagram.com/yungkubrick"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://www.twitter.com/annashamsili"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/annashamsili/"><i class="fab fa-linkedin fa-2x"></i></a>
     </div>
+    <br>
     </footer>
   </body>

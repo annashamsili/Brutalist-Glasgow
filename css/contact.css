@@ -1,0 +1,21 @@
+#contact {
+  text-align: center;
+  font-size: 42px;
+  font-family: "Codec", Arial Black, non-serif;
+  padding:0 auto;
+  margin: 1em;
+}
+
+#intro {
+  padding:3em;
+  padding-left: 7em;
+  padding-right: 7em;
+  position: relative;
+  text-align: center;
+}
+
+#form {
+  text-align: center;
+  padding: 0 auto;
+  background-color: transparent;
+}
