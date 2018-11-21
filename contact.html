@@ -1,12 +1,51 @@
-<!Doctype html>
-<head>
-  <!--Metadata-->
-  <title>Contact</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<!--Actual content. Should probs add images or video or smth-->
-<body>
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <!--metadata goes here-->
+    <title>Glasgow Brutalist Architecture</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="functions.js"></script>
+
+    <!--add bootstrap and jQuery-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+  <div id="top"></div>
+    <header class="page-header">
+    <!--navigation should go here. idea: stack all links in a corner, and on hover they 'unroll' and become readable-->
+    <button type="button" class="btn btn-lg" id="nav-button" onclick="toggleNavbar()"><span class="glyphicon glyphicon-align-justify" aria-hidden:"true"></span></button>
+    <div id="navbar">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="index.html">home</a></li>
+        <li role="presentation"><a href="about.html">about</a></li>
+        <li role="presentation"><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+    <!--cool title bro-->
+    <a href=""><h1 id="title1">BRUTALIST</h1></a>
+    <a href=""><h1 id="title2">GLASGOW</h1></a>
+  </header>
   <h1>Contact</h1>
     <p>Got a cool building you think you should be part of the site? Want to catch coffee and talk about how the utopian ideals of a society are reflected in architecture? Use the form below to contact me!</p>
   <!--And here I should add a contact form!-->
+  <!-- Footer with more info! -->
+  <footer>
+  <br>
+  <div id=copyright>
+    <p>Anna Shams Ili © 2018<br><a href="/contact">Contact</a> | <a href=codefirstgirls.org.uk>Code First Girls</a></p>
+  </div>
+  <div id=social>
+    <!--Add social media links and cute buttons-->
+  <a href="https://instagram.com/yungkubrick"><i class="fab fa-instagram fa-2x"></i></a>
+  <a href="https://www.twitter.com/annashamsili"><i class="fab fa-twitter fa-2x"></i></a>
+  <a href="https://www.linkedin.com/in/annashamsili/"><i class="fab fa-linkedin fa-2x"></i></a>
+  </div>
+  <br>
+  </footer>
+</body>
 </body>

@@ -3,23 +3,25 @@
   <head>
     <!--metadata goes here-->
     <title>Glasgow Brutalist Architecture</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="functions.js"></script>
 
     <!--add bootstrap and jQuery-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
   </head>
 
   <body>
+  <div id="top"></div>
     <header class="page-header">
     <!--navigation should go here. idea: stack all links in a corner, and on hover they 'unroll' and become readable-->
     <button type="button" class="btn btn-lg" id="nav-button" onclick="toggleNavbar()"><span class="glyphicon glyphicon-align-justify" aria-hidden:"true"></span></button>
     <div id="navbar">
       <ul class="nav nav-pills">
-        <li role="presentation"><a href="">home</a></li>
+        <li role="presentation"><a href="index.html">home</a></li>
         <li role="presentation"><a href="about.html">about</a></li>
         <li role="presentation"><a href="contact.html">contact</a></li>
       </ul>
@@ -36,7 +38,7 @@
       <img class="building" src=images/boydorr.png>
       <div id="infobox">
         <p id=boydorrinfo>1964<br>JL Gleave & Partners</p>
-        <a class="building-title" href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">Boyd Orr</a>
+        <a class="building-title" id="boydtitle" href="https://www.universitystory.gla.ac.uk/building/?id=40#tabs=0">Boyd Orr</a>
       </div>
     </div>
     <!--Dundasvale Court-->
@@ -60,36 +62,41 @@
     <div id="argyle" class="col-md-6   container">
       <img class="building" src=images/argyle.png>
       <div class="info" id="argyleinfo">
-        <p>2008<br>Aedas Architects<br>
-        <a class="building-title" href="https://en.wikipedia.org/wiki/Argyle_Building,_Glasgow">Argyle Building</a></p>
+        <a class="building-title" id="argyle-title" href="https://en.wikipedia.org/wiki/Argyle_Building,_Glasgow">Argyle Building</a>
+        <p>2008<br>Aedas Architects</p>
       </div>
     </div>
     <div class="clearfix"></div>
     <!--Adam Smith Building-->
     <div id="adamsmith" class="col-md-6  container">
       <img class="building" src=images/adamsmith.png>
-      <div class="info" id="adamsmithinfo">
-        <p>1967<br>David Harvey, Alex Scott & Associates<br>
-        <a class="building-title" href="https://www.universitystory.gla.ac.uk/building/?id=70">Adam Smith Building</a></p>
+      <div class="info">
+        <p id="adamsmithinfo">1967<br>David Harvey, Alex Scott & Associates<br></p>
+        <a class="building-title" href="https://www.universitystory.gla.ac.uk/building/?id=70">Adam Smith Building</a>
       </div>
     </div>
     <!--Savoy Market-->
     <div id="savoy" class="col-md-6  container">
       <img class="building" src=images/savoy.png>
-      <div class="info" id="savoyinfo">
-        <p>1967<br>David Harvey, Alex Scott & Associates<br>
-        <a class="building-title" href="https://www.eveningtimes.co.uk/news/16688857.sauchiehall-street-savoy-centre-to-undergo-major-refurbishment/">Savoy Centre</a></p>
+      <div class="info">
+        <p id="savoyinfo">1967<br>David Harvey, Alex Scott & Associates<br></p>
+        <a class="building-title" id="savoytitle" href="https://www.eveningtimes.co.uk/news/16688857.sauchiehall-street-savoy-centre-to-undergo-major-refurbishment/">Savoy Centre</a>
       </div>
     </div>
   </div>
 </div>
     <!--Here comes the footer with info!-->
     <footer>
+    <br>
     <div id=copyright>
       <p>Anna Shams Ili © 2018<br><a href="/contact">Contact</a> | <a href=codefirstgirls.org.uk>Code First Girls</a></p>
     </div>
     <div id=social>
       <!--Add social media links and cute buttons-->
+    <a href="https://instagram.com/yungkubrick"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://www.twitter.com/annashamsili"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/annashamsili/"><i class="fab fa-linkedin fa-2x"></i></a>
     </div>
+    <br>
     </footer>
   </body>

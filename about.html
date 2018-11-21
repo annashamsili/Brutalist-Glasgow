@@ -1,9 +1,37 @@
-<!Doctype html>
-<head>
-  <title>About</title>
-</head>
-<body>
-  <div id="about-brutalism">
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <!--metadata goes here-->
+    <title>Glasgow Brutalist Architecture</title>
+  <!--  <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css"> -->
+    <script src="functions.js"></script>
+
+    <!--add bootstrap and jQuery-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+  <div id="top"></div>
+    <header class="page-header">
+    <!--navigation should go here. idea: stack all links in a corner, and on hover they 'unroll' and become readable-->
+    <button type="button" class="btn btn-lg" id="nav-button" onclick="toggleNavbar()"><span class="glyphicon glyphicon-align-justify" aria-hidden:"true"></span></button>
+    <div id="navbar">
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="index.html">home</a></li>
+        <li role="presentation"><a href="about.html">about</a></li>
+        <li role="presentation"><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+    <!--cool title bro-->
+    <a href=""><h1 id="title1">BRUTALIST</h1></a>
+    <a href=""><h1 id="title2">GLASGOW</h1></a>
+  </header>
+  <div id="about-brutalism" class="jumbotron">
   <h1 class=about>Glasgow and Brutalism</h1>
     <p></p>
     <!--Add a little information about brutalism-->
@@ -20,12 +48,17 @@
     <div id ="about2"><p>I am really interested in visual design, and architecture especially. Brutalism is especially interesting from a sociological viewpoint, considering the utopian ideals connected to it. Although it tends to be hated, I also think the stark functionalist aesthetic can also be a nice minimalist departure from the more modern lego-like glass buildings.</p></div>
   </div>
     <!--Here comes the footer with info!-->
-  <footer>
+    <footer>
+    <br>
     <div id=copyright>
       <p>Anna Shams Ili © 2018<br><a href="/contact">Contact</a> | <a href=codefirstgirls.org.uk>Code First Girls</a></p>
     </div>
     <div id=social>
-      <!--Social media links and buttons add here-->
+      <!--Add social media links and cute buttons-->
+    <a href="https://instagram.com/yungkubrick"><i class="fab fa-instagram fa-2x"></i></a>
+    <a href="https://www.twitter.com/annashamsili"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/annashamsili/"><i class="fab fa-linkedin fa-2x"></i></a>
     </div>
-  </footer>
-</body>
+    <br>
+    </footer>
+  </body>

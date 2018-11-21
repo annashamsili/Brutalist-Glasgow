@@ -1,12 +1,17 @@
 /* Things not working:
-- links reacting
+- links reacting/not reacting??
 - movement of text over images (perhaps just disable?)
-
+- start by not displaying the navbar
 */
 
 @font-face {
   font-family: Codec;
-  src: url('Codec-Warm-Bold-trial.ttf');
+  src: url('fonts/Codec-Warm-Bold-trial.ttf');
+}
+
+@font-face {
+  font-family: CamingoCode;
+  src: url('fonts/CamingoCode-Regular.ttf');
 }
 
 body {
@@ -14,16 +19,30 @@ body {
 }
 
 a {
-  text-decoration:none;
+  color: #000 !important;
+}
+
+
+p {
+  font-family: "CamingoCode", Courier New, Arial, non-serif;
+  font-size: 14px;
 }
 
 a:hover {
-  color:red;
+  text-decoration: line-through !important;
+  text-decoration-color: #c60000 !important;
 }
+
 
 ul.nav.nav-pills {
     text-align: right;
     float:right;
+    background-color:transparent;
+    font-family: "CamingoCode", Courier New, Arial, non-serif;
+}
+
+.nav a:hover {
+  background-color:transparent !important;
 }
 
 #nav-button {
@@ -33,9 +52,10 @@ ul.nav.nav-pills {
 
 .page-header {
   border-bottom:0px !important;
+  margin-top:20px !important;
 }
  #title1 {
-  font-family: "Codec", serif;
+  font-family: "Codec", sans-erif;
   color: #000;
   font-size: 50px;
   float:left;
@@ -92,7 +112,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 #buildings {
   position:relative;
-  z-index:-20;
+  z-index:-200;
 }
 
 .container {
@@ -103,22 +123,29 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 #boydorr {
   padding-left:50px;
+  padding-top:20px;
   position:relative;
 }
 
 #boydorrinfo {
   text-align: left;
   line-height: 1em;
+  position:absolute;
+  top: 3em;
 }
 
 #infobox {
-  top: 36em;
+  top: 37em;
   left:3.5em;
   right: 0;
   position:absolute;
   float:left;
   padding:0;
   text-align: left;
+}
+
+#boydtitle {
+  top: 42em;
 }
 
 #dundasvale {
@@ -139,8 +166,50 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   position:absolute;
 }
 
+#anderstoninfo {
+  text-align: right;
+}
 
+#argyleinfo {
+  top: -4.5em;
+  position: absolute;
+  left:3.5em;
+}
+
+#adamsmithinfo {
+  left:25.2em;
+  top:24.7em;
+  bottom:0;
+  position:absolute;
+  text-align:left;
+}
+
+#savoytitle {
+  position: absolute;
+  left:0;
+  bottom:0;
+  right: 1.5em;
+  top: -1em;
+  text-align:right;
+}
+
+#savoyinfo {
+  position: absolute;
+  left: 15.5em;
+  right: 0;
+  top: 18em;
+  text-align:left;
+}
 
 footer {
   text-align: center;
+  border-top: 2px solid black;
+}
+
+footer a {
+  color: #c60000 !important;
+}
+
+footer a:hover {
+  color: #000 !important;
 }
