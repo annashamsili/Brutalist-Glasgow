@@ -1,0 +1,31 @@
+.about {
+  text-align: center;
+  font-size: 42px;
+  font-family: "Codec", Arial Black, non-serif;
+}
+
+#title1 #title2 {
+  position:fixed;
+}
+.jumbotron {
+  background-image: url('../images/brutalism.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  min-width:100%;
+  background-size: cover;
+  top: 2em;
+  z-index: -20;
+}
+
+.about {
+  padding: 15%;
+}
+
+.scroll-box {
+  background-color: #F7F7F7;
+  width: 100%;
+  left: 2em;
+  padding: 4%;
+}

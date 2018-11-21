@@ -3,8 +3,8 @@
   <head>
     <!--metadata goes here-->
     <title>Glasgow Brutalist Architecture</title>
-  <!--  <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/about.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
     <script src="functions.js"></script>
 
     <!--add bootstrap and jQuery-->
@@ -19,7 +19,7 @@
   <div id="top"></div>
     <header class="page-header">
     <!--navigation should go here. idea: stack all links in a corner, and on hover they 'unroll' and become readable-->
-    <button type="button" class="btn btn-lg" id="nav-button" onclick="toggleNavbar()"><span class="glyphicon glyphicon-align-justify" aria-hidden:"true"></span></button>
+    <button type="button" class="btn btn-lg" id="nav-button" onclick="toggleNavbar()"><i class="fas fa-bars fa-lg"></i></button>
     <div id="navbar">
       <ul class="nav nav-pills">
         <li role="presentation"><a href="index.html">home</a></li>
@@ -31,21 +31,30 @@
     <a href=""><h1 id="title1">BRUTALIST</h1></a>
     <a href=""><h1 id="title2">GLASGOW</h1></a>
   </header>
-  <div id="about-brutalism" class="jumbotron">
+  <div class="jumbotron">
+  <div id="about-brutalism">
   <h1 class=about>Glasgow and Brutalism</h1>
-    <p></p>
     <!--Add a little information about brutalism-->
   </div>
-  <div id="Demolition">
-    <h1 class=about>Demolition</h1>
-    <p></p>
-    <!--Add a little information about demolition of building of brutalism-->
+    <div class="scroll-box">
+      <p font-size:10px>Brutalism is a style of architecture, known mainly for it's often 'ugly' look. The style emerged in the early 50s, but mainly gained popularity during the late 60s and 70s. Brutalist architects would be known for appreciating function over form, although brutalist architecture does have its own set of distinct characteristics. If you see a grey building out of cement that looks like it could have been made out of lego blocks, chances are it's brutalist.
+        <br><br>This style of architecture was, not surprisingly, especially common in industrial area. This is why the style is often seen in the old industrial areas of Glasgow City, although many of the iconic high-rises have been, or are planning to be, demolished. </p>
+    </div>
+  <div id="insp">
+    <h1 class=about>Art and Inspiration</h1>
+    <div class="scroll-box">
+    <p>Brutalism has inspired other artforms besides architecture. Besides being an aesthetic and functional choice, it is also based on a principle of designing for necessity, and associated with industrial traditions. It is maybe not too surprising then, that many industrial techno parties are in abandoned warehouses associated with the same architectural style. But besides music, brutalism has even been found in graphic design, especially in web design. There it is usually characterised by very simple html elements, little to no interactivity, and images positioned in odd and disharmonic way. As opposed to the architecture style, these are often very colourful, taking more inspiration of the ethos than the actual look. In a way, it can be seen as a reaction against the previous styles of designs that favoured romanticism, optimism, and harmony.<br>Below you can see two examples.</p>
   </div>
+  <div class="row">
+    <img id="poster1" src="images/poster.jpg">
+    <img id="poster2" src="images/web.jpg">
+  </div>
+</div>
   <div id="about-anna">
     <h1 class=about>Creator</h1>
     <!--Add image of me, contact details-->
-    <div id="about1"><p>My name is Anna, and I study Digital Media and Sociology at the University of Glasgow. Born 1998 in Vienna, Austria, and raised in Denmark, I spend most of her time outside University working on graphic design and audio-visual projects. In 2017 she co-founded the online audio magazine 'LYD', where she writes, creates graphics and maintains the website. She's also active in GUST, GUCFS, and occassionally contributes to GUM.</p></div>
-    <div id ="about2"><p>I am really interested in visual design, and architecture especially. Brutalism is especially interesting from a sociological viewpoint, considering the utopian ideals connected to it. Although it tends to be hated, I also think the stark functionalist aesthetic can also be a nice minimalist departure from the more modern lego-like glass buildings.</p></div>
+    <div class="scroll-box" id="about1"><p>My name is Anna, and I study Digital Media and Sociology at the University of Glasgow. Born 1998 in Vienna, Austria, and raised in Denmark, I spend most of her time outside University working on graphic design and audio-visual projects. In 2017 she co-founded the online audio magazine 'LYD', where she writes, creates graphics and maintains the website. She's also active in GUST, GUCFS, and occassionally contributes to GUM.</p></div>
+    <div class="scroll-box" id ="about2"><p>I am really interested in visual design, and architecture especially. Brutalism is especially interesting from a sociological viewpoint, considering the utopian ideals connected to it. Although it tends to be hated, I also think the stark functionalist aesthetic can also be a nice minimalist departure from the more modern lego-like glass buildings.</p></div>
   </div>
     <!--Here comes the footer with info!-->
     <footer>
@@ -61,4 +70,5 @@
     </div>
     <br>
     </footer>
+    </div>
   </body>
