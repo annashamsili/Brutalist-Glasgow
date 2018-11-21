@@ -1,7 +1,19 @@
+@font-face {
+  font-family: Codec;
+  src: url('fonts/Codec-Warm-Bold-trial.ttf');
+}
+
+@font-face {
+  font-family: CamingoCode;
+  src: url('fonts/CamingoCode-Regular.ttf');
+}
+
 .about {
   text-align: center;
   font-size: 42px;
   font-family: "Codec", Arial Black, non-serif;
+  padding: 15%;
+  color: #aaaaaa !important;
 }
 
 #title1 #title2 {
@@ -19,13 +31,62 @@
   z-index: -20;
 }
 
-.about {
-  padding: 15%;
-}
-
 .scroll-box {
   background-color: #F7F7F7;
-  width: 100%;
+  min-width: 100%;
   left: 2em;
   padding: 4%;
 }
+
+.about-text {
+  line-height: 2;
+}
+
+
+#pics {
+  padding: 20px;
+  padding-top: 15em;
+  padding-bottom: 15em;
+}
+
+#poster1 {
+  padding-left:5em;
+  height:275px;
+  width:auto;
+}
+
+#poster2 {
+  height:275px;
+  width:auto;
+}
+
+#about-anna {
+  background-color: #F7F7F7;
+  min-width: 100%;
+}
+
+#about-anna .about {
+  padding-bottom:0;
+}
+
+#social {
+  text-align:center;
+}
+
+#cool-text {
+  margin: 3em;
+  text-align: center;
+  padding-left: 25%;
+}
+#cool {
+  padding:0 auto;
+}
+/*#cool-text p {
+  padding: 1.5em;
+  height:220px;
+  width:220px;
+  font-size: 14px;
+  background-color: rgba(240, 239, 239, 0.5);
+  border: 2px solid #000;
+}
+*/
