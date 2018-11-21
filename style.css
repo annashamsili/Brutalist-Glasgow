@@ -1,14 +1,24 @@
+/* Things not working:
+- links reacting
+- movement of text over images (perhaps just disable?)
+
+*/
+
 @font-face {
   font-family: Codec;
   src: url('Codec-Warm-Bold-trial.ttf');
+}
+
+body {
+  background-color: #F7F7F7 !important;
 }
 
 a {
   text-decoration:none;
 }
 
-.info a:hover {
-  text-decoration:line-through;
+a:hover {
+  color:red;
 }
 
 ul.nav.nav-pills {
@@ -18,10 +28,7 @@ ul.nav.nav-pills {
 
 #nav-button {
   padding-top: 10px !important;
-}
-
-.navbar {
-  top: -5em;
+  background-color: transparent !important;
 }
 
 .page-header {
@@ -55,7 +62,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 #title2 {
-  font-family: "Codec", serif;
+  font-family: "Codec", Lucida Console, Lucida, sans-serif;
   color: #000;
   font-size: 50px;
   margin:0;
@@ -67,12 +74,73 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 #nav-button {
   float:right;
-  padding-right: 2%;
+  padding-right: 3%;
   padding-top: 0;
+}
+
+.glyphicon.glyphicon-align-justify {
+  font-size:21px;
 }
 
 .building {
   max-width: 100%;
   height: auto;
   display: block;
+  padding: 0px;
+  position:relative;
+}
+
+#buildings {
+  position:relative;
+  z-index:-20;
+}
+
+.container {
+  padding-left:50px !important;
+  padding-right:50px !important;
+  padding-bottom: 50px !important;
+}
+
+#boydorr {
+  padding-left:50px;
+  position:relative;
+}
+
+#boydorrinfo {
+  text-align: left;
+  line-height: 1em;
+}
+
+#infobox {
+  top: 36em;
+  left:3.5em;
+  right: 0;
+  position:absolute;
+  float:left;
+  padding:0;
+  text-align: left;
+}
+
+#dundasvale {
+  padding-top:5px;
+}
+
+.building-title {
+  font-family: "Codec", Lucida Console, Lucida, sans-serif;
+  font-size:4vw;
+  color: #212121;
+  line-height: 1em;
+}
+
+#info {
+  top: 6.3em;
+  left:0;
+  right: 0;
+  position:absolute;
+}
+
+
+
+footer {
+  text-align: center;
 }
