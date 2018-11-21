@@ -228,3 +228,7 @@ footer a:hover {
 #up {
   z-index: 500 !important;
 }
+
+#navbar {
+  display: none;
+}
